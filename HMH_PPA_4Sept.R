@@ -279,17 +279,15 @@ print(obs2)
 d1 <- density(y_tilde[,1], lty = 3)
 plot(d1, main = "Age group <50 years", xlab = "No. of individuals")
 abline(v = pred[1], col = "red", lty = 3, lwd = 2)
-abline(v = obs1week1, col = "blue", lty = 3, lwd = 2)
 abline(v = obs1, col = "blue", lwd = 2)
-legend("topright", legend = c("Signal Threshold", "No. of reported MAs Week 1","No. of reported MAs Week 2"), col = c("red","blue","blue"), lty = c(3,3,1), lwd = 2)
+legend("topright", legend = c("Signal Threshold","No. of reported MAs Week 2"), col = c("red","blue"), lty = c(3,1), lwd = 2)
 
 
 d2 <- density(y_tilde[,2])
 plot(d2, main = "Age group >= 50 years", xlab = "No. of individuals")
 abline(v = pred[2], col = "red", lty = 3, lwd = 2)
-abline(v = obs2week1, col = "blue", lty = 3, lwd = 2)
 abline(v = obs2, col = "blue", lwd = 2)
-legend("topright", legend = c("Signal Threshold", "No. of reported MAs Week 1","No. of reported MAs Week 2"), col = c("red","blue","blue"), lty = c(3,3,1), lwd = 2)
+legend("topright", legend = c("Signal Threshold","No. of reported MAs Week 2"), col = c("red","blue"), lty = c(3,1), lwd = 2)
 
 
 
